@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1662864856 source:c:\users\qiuyingmu\desktop\sqlist\main.c
+	"SqList.h"
+
+1662865625 c:\users\qiuyingmu\desktop\sqlist\sqlist.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<malloc.h>
+
+1662865469 source:c:\users\qiuyingmu\desktop\sqlist\sqlist.c
+	"SqList.h"
+
+1662904146 source:d:\code\datastructure\sqlist\main.c
+	"SqList.h"
+
+1662904171 d:\code\datastructure\sqlist\sqlist.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<malloc.h>
+
