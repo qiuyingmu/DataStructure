@@ -135,7 +135,7 @@ SqList SetUnion(SqList La,SqList Lb)
 
 SqList SetUnionOrderly(SqList La,SqList Lb)
 {
-    //A = AUB 有序
+    //有序线性表的合并
     ElemType ea, eb;
     SqList Lc;
     int laLocation = 0, lbLocation = 0, lcLocation = 0;
@@ -174,6 +174,29 @@ SqList SetUnionOrderly(SqList La,SqList Lb)
     }
 
     return Lc;
+}
+
+SqList SetIntersection(SqList La, SqList Lb)
+{
+    //A = AnB
+    SqList LLa, LLb; //复制La,Lb;防止将原本的线性表内容更改
+    CopyList(La, &LLa);
+    CopyList(Lb, &LLb);
+    ElemType e;
+    int LLa_len = LLa.length;//La表长
+    int i;
+
+    for(i = 1; i <= LLa_len; i++)
+    {
+        e = LLa.elem[i - 1];//取La的第i个元素赋值给e
+        if(LocateElem(LLb, e) == -1)//Lb中不存在和e相同的元素，删除La中的e(位置为i)
+        {
+            ListDelete(&LLa, i, &e);
+            i--; //删除操作后的调整
+            LLa_len--;
+        }
+    }
+    return LLa;
 }
 
 SqList SetDifference(SqList La, SqList Lb)
