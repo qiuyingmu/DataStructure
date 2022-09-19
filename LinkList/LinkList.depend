@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1663475028 source:c:\users\qiuyingmu\desktop\linklist\main.c
+	"LinkList.h"
+
+1663475022 c:\users\qiuyingmu\desktop\linklist\linklist.h
+	<stdio.h>
+	<stdlib.h>
+
+1663475028 source:d:\code\datastructure\linklist\main.c
+	"LinkList.h"
+
+1663577380 d:\code\datastructure\linklist\linklist.h
+	<stdio.h>
+	<stdlib.h>
+
