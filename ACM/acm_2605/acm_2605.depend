@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1664457014 source:d:\code\datastructure\acm\acm_2605\main.c
+	<stdio.h>
+	<stdlib.h>
+
